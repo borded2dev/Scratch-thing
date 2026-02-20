@@ -1,4 +1,5 @@
 function getProfile(){
+	console.log("Button clicked");
 	const username  = document.getElementById("usernameInput").value;
 	fetch(`https://api.scratch.mit.edu/users/${username}`)
 		.then(res => res.json())
